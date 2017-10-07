@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context="com.hsandit.juanluis.loancalculatorapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto del Préstamo ($):"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/amount_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de Cuotas:"
+        android:paddingTop="10dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/installments_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasa de Intéres (%):"
+        android:paddingTop="10dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/interest_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione Fecha de Pago:"
+        android:textSize="16dp"
+        android:paddingTop="10dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/payment_date_text"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+        <Button
+            android:id="@+id/pick_date_buttom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:text="Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00553"/>
+
+</LinearLayout>
