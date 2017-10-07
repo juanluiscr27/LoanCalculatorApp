@@ -5,4 +5,6 @@ This is a simple Loan Calculator Application for Android that shows the payments
 
 ![Alt text](https://github.com/juanluiscr27/LoanCalculatorApp/blob/master/screenshots/MainActivity.png)
 
+![Alt text](https://github.com/juanluiscr27/LoanCalculatorApp/blob/master/screenshots/PaymentsBreakdown.png)
+
 Developed by Juan Luis Casanova for Basic Android Training, Altice Dominicana.
